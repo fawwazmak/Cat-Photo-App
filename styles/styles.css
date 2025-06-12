@@ -1,5 +1,88 @@
+:root {
+    --pink: #ffe6df;
+    --orange: #f27d6b;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: content-box;
+}
+
+
+body {
+    background-color: var(--pink);
+    font-family: "Savate", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.breed {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.377);
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.breed img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.breed img:hover {
+    transform: scale(1.03);
+    transition-duration: 2s;
+}
+
+#cat-breeds {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding-inline: 10px;
+}
+
+#main {
+    position: relative;
+}
+
+.see-more {
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    outline: none;
+    padding-inline: 15px;
+    padding-block: 8px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    text-align: left;
+    color: purple;
+    font-size: 32px;
+}
+
+
+@media (max-width: 530px) {
+    #cat-breeds {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 280px) {
+    #cat-breeds {
+        grid-template-columns: 1fr;
+    }
 }
