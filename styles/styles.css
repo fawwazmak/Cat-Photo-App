@@ -46,8 +46,22 @@ body {
     padding-inline: 10px;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 3px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
 #main {
     position: relative;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 .see-more {
@@ -65,12 +79,27 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    bottom: 3px;
+}
+
+.see-more:hover  {
+    background-color: rgba(255, 255, 255, 0.342);
+    color: var(--orange);
+    transform: scale(1.05);
+    border-radius: 20px;
+    transition-duration: 2s;
 }
 
 .title {
     text-align: left;
     color: purple;
     font-size: 32px;
+}
+
+ul {
+    text-align: left;
+    list-style-type: circle;
+    margin-left: 40px;
 }
 
 
