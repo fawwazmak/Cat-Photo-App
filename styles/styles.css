@@ -1,5 +1,5 @@
 :root {
-    --pink: #ffe6df;
+    --pink: #FF69B4;
     --orange: #f27d6b;
 }
 
@@ -51,16 +51,19 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 3px;
+    gap: 4px;
     color: purple;
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 #main {
     position: relative;
+    margin-top: 20px;
 }
 
 section {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -83,10 +86,10 @@ section {
 }
 
 .see-more:hover  {
-    background-color: rgba(255, 255, 255, 0.342);
+    background-color: purple;
     color: var(--orange);
     transform: scale(1.05);
-    border-radius: 20px;
+    border-radius: 15px;
     transition-duration: 2s;
 }
 
@@ -94,6 +97,8 @@ section {
     text-align: left;
     color: purple;
     font-size: 32px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 ul {
@@ -106,6 +111,11 @@ ul {
 @media (max-width: 530px) {
     #cat-breeds {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        text-align: center;
+        margin: 0;
     }
 }
 
